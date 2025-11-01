@@ -19,10 +19,11 @@ void testLogin(){
     cout << user << '\n' << pass << endl;
 };
 
+// login function
 void login(){
     int loginAttempt = 0;
     
-    while(loginAttempt <= 5){
+    while(loginAttempt <= 3){
     
         cout<< "Please enter username: ";
         cin >> user;
@@ -54,7 +55,7 @@ void login(){
 
             if (!loggedIn){
                 cout<< "\nInvalid user or password"<< endl;
-                cout<< "You have " << 5 - loginAttempt << " attempts.\n"<< endl;
+                cout<< "You have " << 3 - loginAttempt << " attempts.\n"<< endl;
                 loginAttempt++;
             } else {
                 break;

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "login.h"
+#include "reg.h"
 
 using namespace std;
 
@@ -24,10 +25,11 @@ int main(){
         } else if (option == 2) {
             cout<< "----------------------\n"
             << "\nUnder construction\n"<<endl;
+            reg();
             break;
             
         } else {
-            cout<< "\nThank you, have a nice day!\n"<<endl;
+            cout<< "\nChoose either Option 1 or Option 2\n"<<endl;
         }
     }
     return 0;
